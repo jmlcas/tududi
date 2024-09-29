@@ -1,0 +1,22 @@
+services:
+
+    tududi:
+        image: chrisvel/tududi:0.20 
+        restart: unless-stopped
+        ports:
+            - "9292:9292"               
+        environment:
+            - TUDUDI_USER_EMAIL=tu@email.com
+            - TUDUDI_USER_PASSWORD=tupassword
+            - TUDUDI_SESSION_SECRET=3337c138d17ac7acefa412e5db0d7ef6540905b198cc28c5bf0d11e48807a71bdfe48d82ed0a0a6eb667c937cbdd1db3e1e6073b3148bff37f73cc6398a39671
+            - TUDUDI_INTERNAL_SSL_ENABLED=false
+        volumes:
+            - ./tududi_db:/usr/src/app/tududi_db
+
+
+
+            
+
+
+          
+

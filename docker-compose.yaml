@@ -1,10 +1,10 @@
 services:
 
     tududi:
-        image: chrisvel/tududi:0.20 
+        image: chrisvel/tududi:0.20
         restart: unless-stopped
         ports:
-            - "9292:9292"               
+            - "9292:9292"            
         environment:
             - TUDUDI_USER_EMAIL=tu@email.com
             - TUDUDI_USER_PASSWORD=tupassword
@@ -12,11 +12,4 @@ services:
             - TUDUDI_INTERNAL_SSL_ENABLED=false
         volumes:
             - ./tududi_db:/usr/src/app/tududi_db
-
-
-
-            
-
-
-          
 

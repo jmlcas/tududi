@@ -1,7 +1,7 @@
 services:
 
     tududi:
-        image: chrisvel/tududi:0.20
+        image: chrisvel/tududi:latest
         restart: unless-stopped
         ports:
             - "9292:9292"            
